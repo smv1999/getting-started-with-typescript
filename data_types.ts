@@ -25,3 +25,11 @@ console.log(students[2]);
 var anything : any[] = ["Apple", 100, 95.5];
 
 console.log(anything[2]);
+
+enum color {
+    red,
+    blue,
+    green
+}
+
+console.log(color.blue);

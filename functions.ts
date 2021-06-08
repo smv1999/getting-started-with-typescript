@@ -11,3 +11,14 @@ function addNums(num1 : any, num2 : number) : number {
 }
 
 console.log(addNums('10', 20));
+
+
+// Generics
+
+function add<T extends string | number>(num1: T, num2: T) : T extends string ? string : number {
+    return <any>num1 + <any>num2;
+}
+
+console.log(add(3,4));
+console.log(add("a","b"));
+// console.log(add("a",4));
