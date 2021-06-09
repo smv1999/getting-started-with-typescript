@@ -30,6 +30,7 @@ student.marks = 90;
 console.log(student.rno);
 console.log(student.name);
 console.log(student.marks);
+// abstract classes 
 var Animal = /** @class */ (function () {
     function Animal(theName) {
         this.name = theName;
@@ -52,4 +53,29 @@ var Dog = /** @class */ (function (_super) {
 var dog = new Dog("Shero");
 dog.walk(30);
 dog.bark();
+function operate(x) {
+    return x.side * x.side;
+}
+var calc = operate({ shape: "square", side: 5 });
+console.log(calc);
+var Person = /** @class */ (function () {
+    function Person() {
+        console.log("Person Constructor");
+    }
+    Person.prototype.getID = function () {
+        return 10;
+    };
+    return Person;
+}());
+var Employee = /** @class */ (function (_super) {
+    __extends(Employee, _super);
+    function Employee() {
+        var _this = _super.call(this) || this;
+        console.log("Employee Constructor");
+        return _this;
+    }
+    return Employee;
+}(Person));
+var emp = new Employee();
+console.log(emp.getID());
 //# sourceMappingURL=classes_and_objects.js.map

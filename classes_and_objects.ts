@@ -18,6 +18,8 @@ console.log(student.rno);
 console.log(student.name);
 console.log(student.marks);
 
+// abstract classes 
+
 abstract class Animal {
     private name: string;
 
@@ -44,3 +46,38 @@ class Dog extends Animal {
 var dog = new Dog("Shero");
 dog.walk(30);
 dog.bark();
+
+
+// Interfaces 
+
+interface operateInterface {
+    shape: string;
+    side?: number;
+}
+
+function operate(x:operateInterface) {
+    return x.side * x.side;
+}
+
+var calc = operate({shape:"square", side:5});
+console.log(calc);
+
+
+class Person {
+    constructor() {
+        console.log("Person Constructor");
+    }
+    getID() {
+        return 10;
+    }
+}
+
+class Employee extends Person {
+    constructor() {
+        super();
+        console.log("Employee Constructor");
+    }
+}
+
+var emp = new Employee();
+console.log(emp.getID());
