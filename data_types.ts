@@ -1,9 +1,11 @@
+// 1
 var num = 20;
 var personName = "Rahul";
 
 console.log(num);
 console.log(personName);
 
+// 2
 var n : number = 20;
 var pName : string = "Rahul";
 

@@ -9,6 +9,8 @@ function addNums(num1, num2) {
     return num1 + num2;
 }
 console.log(addNums('10', 20));
+console.log(addNums(30, 40));
+console.log(addNums('a', 50));
 // Generics
 function add(num1, num2) {
     return num1 + num2;

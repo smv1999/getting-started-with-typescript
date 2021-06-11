@@ -11,7 +11,8 @@ function addNums(num1 : any, num2 : number) : number {
 }
 
 console.log(addNums('10', 20));
-
+console.log(addNums(30, 40));
+console.log(addNums('a', 50));
 
 // Generics
 

@@ -1,7 +1,9 @@
+// 1
 var num = 20;
 var personName = "Rahul";
 console.log(num);
 console.log(personName);
+// 2
 var n = 20;
 var pName = "Rahul";
 // Both the declarations mean the same
