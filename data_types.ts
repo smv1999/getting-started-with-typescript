@@ -35,3 +35,7 @@ enum color {
 }
 
 console.log(color.blue);
+
+let isBool : boolean;
+console.log(isBool);
+

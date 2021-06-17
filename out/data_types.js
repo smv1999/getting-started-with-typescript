@@ -23,4 +23,6 @@ var color;
     color[color["green"] = 2] = "green";
 })(color || (color = {}));
 console.log(color.blue);
+var isBool;
+console.log(isBool);
 //# sourceMappingURL=data_types.js.map
